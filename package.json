@@ -1,0 +1,27 @@
+{
+  "name": "projetcontact",
+  "version": "1.0.0",
+  "description": "projet node",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeryShinigami/projetcontact.git"
+  },
+  "author": "valery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeryShinigami/projetcontact/issues"
+  },
+  "homepage": "https://github.com/ValeryShinigami/projetcontact#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "validator": "^13.6.0"
+  }
+}
