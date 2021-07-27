@@ -1,3 +1,5 @@
+const Contact = require('../models/contactModel');
+
 exports.tousLesContacts = function (req, res){
     res.json({
         "message": "GET OK"

@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
+
+const protocole = "mongodb";
 const server = 'localhost:21017';
 const database = 'ContactDb';
-
+const dbUrl = `${protocole}://${server}/${database}`;
 class MongoConnexion {
 
     constructor(){
@@ -10,7 +12,7 @@ class MongoConnexion {
 
     connexion = () => {
         //connexion au serveur MONGODB
-mongoose.connect('mongodb://localhost/ContactDb', {
+mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
